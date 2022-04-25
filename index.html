@@ -49,6 +49,8 @@
                         <p>
                             Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
                         </p>
+                        <input type="number" id="input-number" placeholder="請輸入數字" />
+                        <button id="click-me-button">按我</button>
                     </div>
                     <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                         <h3 class="content-subhead">
@@ -143,5 +145,13 @@
                 Copyright &copy; 2022 小喵
             </div>
         </div>
+        <script>
+            const inputNumber = document.getElementById('input-number')
+            const clickMeButton = document.getElementById('click-me-button')
+            clickMeButton.addEventListener('click', () => {
+                const number = Number(inputNumber.value)
+                alert('你輸入了：' + number)
+            })
+        </script>
     </body>
 </html>
